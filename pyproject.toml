@@ -1,0 +1,34 @@
+[build-system]
+requires = ["setuptools>=61.2.0", "wheel", "setuptools_scm[toml]>=3.4.3"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "Chassis"
+authors = [{name = "KOLANICH"}]
+description = "A replacement for patsy better suitable for fully automated use"
+readme = "ReadMe.md"
+keywords = ["patsy", "data science", "machine learning", "design matrix"]
+license = {text = "Unlicense"}
+classifiers = [
+	"Programming Language :: Python",
+	"Programming Language :: Python :: 3",
+	"Development Status :: 4 - Beta",
+	"Environment :: Other Environment",
+	"Intended Audience :: Developers",
+	"License :: Public Domain",
+	"Operating System :: OS Independent",
+	"Topic :: Software Development :: Libraries :: Python Modules",
+]
+urls = {Homepage = "https://codeberg.org/KOLANICH-ML/Chassis.py"}
+requires-python = ">=3.4"
+dependencies = [
+	"numpy",
+	"pandas",
+]
+dynamic = ["version"]
+
+[tool.setuptools]
+zip-safe = true
+py-modules = ["Chassis"]
+
+[tool.setuptools_scm]
