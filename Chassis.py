@@ -10,6 +10,7 @@ from functools import wraps
 import numpy as np
 import pandas
 
+warnings.warn("We have moved from M$ GitHub to https://codeberg.org/KOLANICH-ML/Chassis.py , read why on https://codeberg.org/KOLANICH/Fuck-GuanTEEnomo .")
 
 class RecomputingDict(dict):
 	def __init__(self, *args, **kwargs):
